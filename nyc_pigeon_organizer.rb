@@ -14,7 +14,7 @@ final_results = data.each_with_object({}) do |(key, value), final_array|
        !final_array[name][key] = []
        end
       
-       final_array[name][key].push(inner_key)
+       final_array[name][key].push(inner_key.to_s)
        
       end
       #binding.pry
